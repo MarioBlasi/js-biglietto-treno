@@ -10,16 +10,14 @@ per indicare centesimi sul prezzo).*/
 /*------------------*/
 
 //chiedere al passeggero il numero di km che vuole percorrere
-//prompt and // const
 //chiedere l'etá del passeggero
-//prompt and // const
 //calcolare il prezzo totale del viaggio (0.21 € al km)
-// 0.21£ x km da percorrere
-
+// calcoliamo il prezzo del biglietto per un km
 //applicare scoto 20% <18 anni
-// Verifico SE il passeggero ha meno di 18 anni applico lo sconto
+// Verifico SE il passeggero ha meno di 18 anni
+//calcoliamo il prezzo del biglietto con il 20% di sconto
 //applicare sconto 40% >65 anni
-// Verifico SE il passeggero ha piú di 65 anni applico lo sconto
+//calcoliamo il prezzo del biglietto con il 40% di sconto
 // ALTRIMENTI NON applico Nessuno sconto
 
 // prezzo finale riportato fuori nel browser
@@ -28,16 +26,25 @@ const userKm = prompt("quanti km vuoi percorrere?");
 console.log(userKm);
 /*---------chilometri da fare----*/
 
-const prezzoKm = 0.21;
-console.log(prezzoKm);
-
-const spesa = "userKm" * "prezzoKm";
-console.log(spesa);
-
 const userAge = prompt("quanti anni hai?");
 console.log(userAge);
 /*--------etá del passeggero----*/
 
+const prezzoKm = 0.21;
+console.log(prezzoKm);
+/*-------prezzo a singolo km----*/
+
+const spesa = userKm * prezzoKm;
+console.log(spesa);
+/*-------i km da fare per il prezzo al singolo km----*/
+
+const under18 = (prezzoKm * 20) / 100;
+console.log(under18);
+/*-------prezzo per under 18 scontato al 20%----*/
+
+const over65 = (prezzoKm * 40) / 100;
+console.log(over65);
+/*-------prezzo per over65 scontato al 40%----*/
 /*
 const user = passeggero;
 console.log(user)
