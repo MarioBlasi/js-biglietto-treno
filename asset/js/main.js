@@ -46,12 +46,10 @@ const over65 = (spesa * 40) / 100;
 console.log(over65);
 /*-------prezzo per over65 scontato al 40%----*/
 
-/*
+if (userAge < 18) {
+  spesa = spesa - under18;
+} else if (userAge >= 65) {
+  spesa = spesa - over65;
+}
 
-if (passeggero < 18) {
-    console.log("sconto del 20%");
-  } else if (passeggero > 18  && passeggero < 65) {
-    console.log("niente sconto");
-  } else (passeggero > 65) {
-    console.log("sconto 40%");
-  }*/
+console.log(spesa);
