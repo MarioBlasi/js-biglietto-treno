@@ -51,5 +51,12 @@ if (userAge < 18) {
 } else if (userAge >= 65) {
   spesa = spesa - over65;
 }
-
 console.log(spesa);
+/*-------Discount 18/65----*/
+
+const priceElement = document.getElementById("price");
+console.log(priceElement);
+/*seleziono e salvo in una variabile un elemento della dom con getElementById*/
+
+priceElement.innerHTML = spesa;
+/*Stampo a schermo il risultato*/
