@@ -38,18 +38,10 @@ const spesa = userKm * prezzoKm;
 console.log(spesa);
 /*-------i km da fare per il prezzo al singolo km----*/
 
-const under18 = (spesa * 20) / 100;
-console.log(under18);
-/*-------prezzo per under 18 scontato al 20%----*/
-
-const over65 = (spesa * 40) / 100;
-console.log(over65);
-/*-------prezzo per over65 scontato al 40%----*/
-
 if (userAge < 18) {
-  spesa = spesa - under18;
+  (spesa * 20) / 100;
 } else if (userAge >= 65) {
-  spesa = spesa - over65;
+  (spesa * 40) / 100;
 }
 console.log(spesa);
 /*-------Discount 18/65----*/
